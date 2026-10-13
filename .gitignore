@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.next/
+.turbo/
+coverage/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Expo
+.expo/
+web-build/
+
+# Logs
+*.log
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/

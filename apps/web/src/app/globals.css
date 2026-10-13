@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-display: var(--font-sora);
+  --font-sans: var(--font-instrument);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #07050f;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+::selection {
+  background: #8b5cf6;
+  color: #fff;
+}
+
+/* Violet gradient text for headline accents */
+.text-gradient {
+  background: linear-gradient(90deg, #c4b5fd 0%, #a78bfa 45%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Fade the edges of marquees */
+.mask-fade-x {
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
