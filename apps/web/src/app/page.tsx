@@ -1,9 +1,7 @@
 "use client";
 
 import Link from "next/link";
-
 import { useRef, useState } from "react";
-
 import {
   AnimatePresence,
   motion,
@@ -14,11 +12,8 @@ import {
 } from "framer-motion";
 
 import Calculator from "../components/calculator";
-
 import { AnimatedNumber, EASE, Reveal, Spotlight } from "../components/motion";
-
 import { BRAND } from "../lib/brand";
-
 import { DESTINATIONS, METHODS } from "../lib/quote";
 
 /* ------------------------------------------------------------------ */
@@ -278,11 +273,7 @@ function Navbar() {
       description: "Send money home with confidence.",
       href: "#features",
     },
-    {
-      label: "Exchange Rates & Fees",
-      description: "See exactly what your family receives.",
-      href: "#pricing",
-    },
+
     {
       label: "Transfer Tracking",
       description: "Follow every transfer from start to finish.",
@@ -388,12 +379,7 @@ function Navbar() {
           >
             How it works
           </a>
-          <a
-            href="#pricing"
-            className="text-sm font-medium text-white/75 transition hover:text-white"
-          >
-            Pricing
-          </a>
+
           <a
             href="#about"
             className="text-sm font-medium text-white/75 transition hover:text-white"
@@ -524,13 +510,7 @@ function Navbar() {
               >
                 How it works
               </a>
-              <a
-                href="#pricing"
-                onClick={closeMobileMenu}
-                className="block rounded-xl px-3 py-3 text-sm font-medium text-white/80 hover:bg-white/[0.06]"
-              >
-                Pricing
-              </a>
+
               <a
                 href="#about"
                 onClick={closeMobileMenu}
@@ -1644,8 +1624,6 @@ export default function HomePage() {
       <Features />
 
       <HowItWorks />
-
-      <Pricing />
 
       <Trust />
 
